@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الموقع الرسمي لمستر رياض حسين</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="الموقع الرسمي لمستر رياض حسين مدرس أول رياضيات للصف الثالث الثانوي 2025">
+  <meta name="author" content="مستر رياض حسين">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <h1>مستر رياض حسين</h1>
+  <span>مدرس أول رياضيات – الصف الثالث الثانوي 2025</span>
+</header>
+
+<section class="hero">
+  <div class="paper-container">
+    <div id="paper3d"></div>
+    <p class="paper-text">ورقة امتحان – نموذج تفاعلي</p>
+  </div>
+
+  <div class="actions">
+    <button onclick="openPanel('lesson')">📘 الحصة</button>
+    <button onclick="openPanel('homework')">✏️ الواجب</button>
+    <button onclick="openPanel('exam')">📝 الامتحانات</button>
+  </div>
+</section>
+
+<footer>
+  © 2025 – الموقع الرسمي لمستر رياض حسين – جميع الحقوق محفوظة
+</footer>
+
+<!-- PANEL -->
+<div class="panel" id="panel">
+  <div class="panel-box">
+    <h2 id="panelTitle"></h2>
+
+    <label class="upload-btn">
+      ➕ إضافة صور
+      <input type="file" multiple accept="image/*" onchange="previewImages(event)">
+    </label>
+
+    <div class="preview" id="preview"></div>
+
+    <button class="close-btn" onclick="closePanel()">إغلاق</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
